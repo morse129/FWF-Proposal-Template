@@ -1,0 +1,198 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{proposal}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\linespread{1.5} 
+
+\usepackage{graphicx} % Required for inserting images
+
+\graphicspath{{figures/}}
+
+%\addbibresource{references.bib}
+%\usepackage[authoryear]{natbib}
+%\setcitestyle{square,numbers}
+%\bibliographystyle{unsrtnat}
+
+\usepackage[authoryear]{natbib}
+\setcitestyle{square,numbers}
+\bibliographystyle{unsrtnat}
+
+\input{highlight_box} % For WP summary boxes
+\input{fwf_colors} % For FWF logo colors
+
+% Color and format section titles
+\titleformat*{\section}{\large\bfseries\color{FWFblue}}
+\titleformat*{\subsection}{\large\itshape\color{FWFblue}}
+
+
+
+% See https://www.fwf.ac.at/fileadmin/Website/Dokumente/Foerdern/Portfolio/ESPRIT/fwf_esp_application_guidelines.pdf for requirements
+
+
+% Define title
+\def\projecttitle{My Proposal Title}
+
+
+\begin{document}
+
+{\linespread{1}{\raggedright{} \normalsize \bfseries
+    \textcolor{FWFblue}{FWF ESPRIT Project Proposal:} \par
+    \normalfont \projecttitle \par
+    Author \par
+	\rule{\textwidth}{0.5pt} \par}
+}
+
+\renewcommand*\contentsname{Table of Contents}
+
+\tableofcontents
+\newpage
+
+
+\centerline{\LARGE\textcolor{FWFblue}{\projecttitle}}
+
+\section{State of the art and preliminary work}
+
+\lipsum[1]
+
+\subsection{State of the art}
+
+\subsection{Preliminary work of the applicant}
+
+
+
+\section{Research aims and hypotheses}
+
+
+\section{Originality and innovation}
+
+\subsection{Relevance of the expected results}
+
+\subsection{Innovative aspects of the proposed work}
+
+
+
+\section{Methods}
+
+
+
+\section{Work plan and timeline}
+
+\begin{figure}[h]
+	\centering
+  	\resizebox{\textwidth}{!}{\includestandalone[mode=tex]{gantt}}
+	\caption{Workpackage time considerations in months (M) and assigned person-months (PM) for Institute of ABC (ABC) and Institute for CDE (CDE).}
+	\label{fig:timeline}
+\end{figure}
+
+
+
+\section{Collaboration}
+
+
+
+\section{Research qualifications of the involved researchers}
+
+
+
+\section{Ethical, safety-related, and regulatory aspects}
+
+
+
+\section{Sex-specific and gender-related aspects}
+
+Within the proposed work, no sex- or gender-related aspects are considered.
+
+
+
+\section{Information on the research institution}
+
+
+
+
+
+%% WP summary box----------------
+\bigskip
+\noindent\myTip[1.0\textwidth]{t}{1}{\emph{\vspace*{0.1cm}\textbf{Summary}\newline
+\textbf{Aim:}
+In this work package,  \newline
+\textbf{Method:}
+Based on our unique  \newline
+\textbf{Outcome:}
+\lipsum[1]
+}}
+%%-------------------------------
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% ANNEXES
+%%%%%%%%%%%%%%%%%%%%%
+
+\backmatter
+
+
+%% ANNEX 2
+
+\newpage
+\vspace*{10cm}
+\raggedleft{\color{FWFblue} \Huge{\bfseries ANNEX 1} \par
+\huge List of the cited literature}
+
+\raggedright
+\newpage
+
+\bibliography{references}
+
+% No more than 5 pages
+
+
+%% ANNEX 2
+
+\newpage
+\vspace*{10cm}
+\raggedleft{\color{FWFblue} \Huge{\bfseries ANNEX 2} \par
+\huge Academic curriculum vitae}
+
+\raggedright
+\newpage
+
+% See https://www.fwf.ac.at/fileadmin/Website/Dokumente/Foerdern/Portfolio/ESPRIT/fwf_esp_application_guidelines.pdf for requirements
+
+
+
+
+
+
+%% ANNEX 3
+
+\newpage
+\vspace*{10cm}
+\raggedleft{\color{FWFblue} \Huge{\bfseries ANNEX 3} \par
+\huge Career and mentoring plan}
+
+\raggedright
+\newpage
+
+% See https://www.fwf.ac.at/fileadmin/Website/Dokumente/Foerdern/Portfolio/ESPRIT/fwf_esp_application_guidelines.pdf for requirements
+
+
+
+
+
+%% ANNEX 4
+
+\newpage
+\vspace*{10cm}
+\raggedleft{\color{FWFblue} \Huge{\bfseries ANNEX 4} \par
+\huge Collaboration Letters}
+
+\raggedright
+\newpage
+
+% OPTIONAL, delete if not needed
+
+\end{document}
